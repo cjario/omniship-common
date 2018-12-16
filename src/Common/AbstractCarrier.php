@@ -129,6 +129,16 @@ abstract class AbstractCarrier implements CarrierInterface
     }
 
     /**
+     * Supports Shipment
+     *
+     * @return boolean True if this carrier supports the shipment() method
+     */
+    public function supportsShipment()
+    {
+        return method_exists($this, 'shipment');
+    }
+
+    /**
      * Create and initialize a request object
      *
      * This function is usually used to create objects of type

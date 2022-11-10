@@ -1,4 +1,4 @@
- <?php
+<?php
 namespace Omniship\Common\Object;
 
 use Omniship\Common\ParametersTrait;

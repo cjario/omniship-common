@@ -9,6 +9,10 @@ abstract class AbstractCountry {
   
   protected $cities = [];
   
+  function __construct(array $data) {
+        $this->initialize($data);
+    }
+  
   function setName($value) {
      $this->setParameter("name", $value);
   }

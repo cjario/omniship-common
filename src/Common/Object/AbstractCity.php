@@ -6,6 +6,10 @@ use Omniship\Common\ParametersTrait;
 abstract class AbstractCity {
   
     use ParametersTrait;
+ 
+   function __construct(array $data) {
+        $this->initialize($data);
+    }
   
     function setName($value) {
         $this->setParameter("name", $value);

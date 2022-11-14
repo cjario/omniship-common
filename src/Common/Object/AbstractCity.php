@@ -7,7 +7,7 @@ abstract class AbstractCity {
   
     use ParametersTrait;
  
-   function __construct(array $data) {
+   function __construct(array $data = []) {
         $this->initialize($data);
     }
   

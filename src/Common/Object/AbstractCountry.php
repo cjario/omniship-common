@@ -9,7 +9,7 @@ abstract class AbstractCountry {
   
   protected $cities = [];
   
-  function __construct(array $data) {
+  function __construct(array $data = []) {
         $this->initialize($data);
     }
   
